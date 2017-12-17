@@ -1,25 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerVC_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-6w-CKY">
+                                <rect key="frame" x="37" y="110" width="300" height="467"/>
+                                <connections>
+                                    <segue destination="ToK-vH-Gn7" kind="embed" identifier="container" id="wwZ-Va-QhL"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj1-Mn-ZEK">
+                                <rect key="frame" x="143.5" y="20" width="87" height="30"/>
+                                <state key="normal" title="Add ChildVC"/>
+                                <connections>
+                                    <action selector="didPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5E-Hf-w3n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T1p-6w-CKY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="0tz-Ly-Ntq"/>
+                            <constraint firstItem="fj1-Mn-ZEK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="34m-Nl-9Yk"/>
+                            <constraint firstItem="T1p-6w-CKY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4gV-IZ-MCp"/>
+                            <constraint firstItem="T1p-6w-CKY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7ud-90-8VH"/>
+                            <constraint firstItem="T1p-6w-CKY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="HeD-j2-KUO"/>
+                            <constraint firstItem="fj1-Mn-ZEK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I1o-8U-cuw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-788" y="43"/>
+        </scene>
+        <!--ContainerVC-->
+        <scene sceneID="SUH-eO-PDz">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="ToK-vH-Gn7" customClass="ContainerVC" customModule="ContainerVC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qCa-9Q-AaU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="replacesTopVC" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="P2y-6I-9lY" kind="show" identifier="blue" id="vh3-Uf-ZVu"/>
+                        <segue destination="Gio-nF-luU" kind="relationship" relationship="rootViewController" id="4pj-pq-7sY"/>
+                        <segue destination="Gio-nF-luU" kind="show" identifier="red" id="mjB-xH-Sde"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhV-ed-35g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="43"/>
+        </scene>
+        <!--ChildVC-->
+        <scene sceneID="zpo-lh-UVP">
+            <objects>
+                <viewController id="P2y-6I-9lY" customClass="ChildVC" customModule="ContainerVC_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iRa-84-5eE">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="467"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.5568627451" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eem-z8-31n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Coo-K2-BB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="455"/>
+        </scene>
+        <!--ChildVC-->
+        <scene sceneID="qdZ-ag-DaB">
+            <objects>
+                <viewController id="Gio-nF-luU" customClass="ChildVC" customModule="ContainerVC_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFr-Cf-Avo">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="467"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.62222222220000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WhW-Sb-Hw3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DAE-AT-IZV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rh0-6e-jhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-262"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mjB-xH-Sde"/>
+    </inferredMetricsTieBreakers>
 </document>

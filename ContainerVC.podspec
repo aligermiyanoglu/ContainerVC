@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ContainerVC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ContainerVC.'
+  s.summary          = 'ContainerVC is a custom container view controller which subclasses UINavigationController for basic customization.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,12 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+	ContainerVC is a custom container view controller which subclasses UINavigationController for basic customization. In order to customize animation transitions, UINavigationController Delegate class is manipulated. Because of this, it should be noted that ordinary delegate method would not be working as usual. ContainerNavigationDelegate can be used as standard delegate implementation
                        DESC
 
   s.homepage         = 'https://github.com/aligermiyanoglu/ContainerVC'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'aligermiyanoglu' => 'aligermiyanoglu@gmail.com' }
+  s.author           = { 'aligermiyanoglu' => 'anibal23736@hotmail.com' }
   s.source           = { :git => 'https://github.com/aligermiyanoglu/ContainerVC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3A03141FE69C9F00081ACB /* ChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A03131FE69C9F00081ACB /* ChildVC.swift */; };
 		3BB6804D0FA6CA348C772C97 /* Pods_ContainerVC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1709D3462077F35AE0A596A1 /* Pods_ContainerVC_Tests.framework */; };
 		3EB051B019B3709932E7C72B /* Pods_ContainerVC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62B2E590E75460529427C36 /* Pods_ContainerVC_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,10 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		114D36D97EE77496E313D625 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		114D36D97EE77496E313D625 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1709D3462077F35AE0A596A1 /* Pods_ContainerVC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerVC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E37F346A23293FA9C45A1B6 /* Pods-ContainerVC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerVC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerVC_Tests/Pods-ContainerVC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5429067F2B68F7F91DE66A4E /* ContainerVC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ContainerVC.podspec; path = ../ContainerVC.podspec; sourceTree = "<group>"; };
+		3B3A03131FE69C9F00081ACB /* ChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVC.swift; sourceTree = "<group>"; };
+		5429067F2B68F7F91DE66A4E /* ContainerVC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContainerVC.podspec; path = ../ContainerVC.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ContainerVC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerVC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		8793182B68ACDCC956367894 /* Pods-ContainerVC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerVC_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerVC_Tests/Pods-ContainerVC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		89F2FFC8FC9845C06B7D235D /* Pods-ContainerVC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerVC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerVC_Example/Pods-ContainerVC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4C8727550D76E1B98DFF63B /* Pods-ContainerVC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerVC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerVC_Example/Pods-ContainerVC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A8E66B8906A73DA7AAD3BED9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A8E66B8906A73DA7AAD3BED9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E62B2E590E75460529427C36 /* Pods_ContainerVC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerVC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				3B3A03131FE69C9F00081ACB /* ChildVC.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3B3A03141FE69C9F00081ACB /* ChildVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
