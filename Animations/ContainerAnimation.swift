@@ -11,6 +11,9 @@ import UIKit
 
 open class ContainerAnimation: NSObject, UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate, ContainerAnimationProtocol {
     
+    /* ContainerAnimationProtocol Methods */
+    /**************************************/
+    
     public func duration() -> TimeInterval {
         return TimeInterval(UINavigationControllerHideShowBarDuration)
     }
@@ -24,6 +27,10 @@ open class ContainerAnimation: NSObject, UIViewControllerAnimatedTransitioning, 
         
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     }
+    
+    
+    /* UIViewControllerAnimatedTransitioning Methods */
+    /*************************************************/
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration()
