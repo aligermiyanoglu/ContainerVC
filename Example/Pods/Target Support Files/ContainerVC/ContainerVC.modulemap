@@ -1,0 +1,6 @@
+framework module ContainerVC {
+  umbrella header "ContainerVC-umbrella.h"
+
+  export *
+  module * { export * }
+}

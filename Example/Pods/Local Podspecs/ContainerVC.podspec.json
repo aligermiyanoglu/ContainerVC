@@ -1,0 +1,22 @@
+{
+  "name": "ContainerVC",
+  "version": "0.1.0",
+  "summary": "A short description of ContainerVC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aligermiyanoglu/ContainerVC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aligermiyanoglu": "aligermiyanoglu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/aligermiyanoglu/ContainerVC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ContainerVC/Classes/**/*"
+}
