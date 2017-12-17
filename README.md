@@ -22,7 +22,7 @@ pod 'ContainerVC'
 
 ## Author
 
-aligermiyanoglu, aligermiyanoglu@gmail.com
+aligermiyanoglu
 
 ## License
 
