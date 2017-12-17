@@ -1,5 +1,5 @@
 PODS:
-  - ContainerVC (0.1.0)
+  - ContainerVC (1.0.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ContainerVC: b6bfa7a73eec6c3c32d6a8f2b3445a4ea3b496de
+  ContainerVC: 0afe958c2abae07f8ea45e14bde8a22bf7483914
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: b383a3af797b0e7d6b18ae21da89c55cafbbe6fb
