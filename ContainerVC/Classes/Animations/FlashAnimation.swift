@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class FlashAnimation: ContainerAnimation {
+public final class FlashAnimation: ContainerAnimation {
     
     override public func duration() -> TimeInterval {
         return TimeInterval(0.4)

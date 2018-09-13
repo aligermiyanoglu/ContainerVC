@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+public typealias ContainerNavigationDelegate = UINavigationControllerDelegate
+
 open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     @IBInspectable open var replacesTopVC: Bool = false
     weak open var navigationDelegate: ContainerNavigationDelegate?
@@ -24,7 +26,7 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
         let subVC = self.viewControllers[index]
         
         subVC.view.removeFromSuperview()
-        subVC.removeFromParentViewController()
+        subVC.removeFromParent()
     }
     
     private func customize() {
@@ -56,7 +58,7 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
         customize()
     }
     
-    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return animator
     }
     

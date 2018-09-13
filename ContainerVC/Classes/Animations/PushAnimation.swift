@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class PushAnimation: ContainerAnimation {
+public final class PushAnimation: ContainerAnimation {
     
     override public func animate(transitionContext: UIViewControllerContextTransitioning) {
         let container = transitionContext.containerView

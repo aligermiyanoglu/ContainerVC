@@ -1,6 +1,6 @@
 {
   "name": "ContainerVC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "ContainerVC is a custom container view controller which subclasses UINavigationController for basic customization.",
   "description": "ContainerVC is a custom container view controller which subclasses UINavigationController for basic customization. In order to customize animation transitions, UINavigationController Delegate class is manipulated. Because of this, it should be noted that ordinary delegate method would not be working as usual. ContainerNavigationDelegate can be used as standard delegate implementation",
   "homepage": "https://github.com/aligermiyanoglu/ContainerVC",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/aligermiyanoglu/ContainerVC.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
