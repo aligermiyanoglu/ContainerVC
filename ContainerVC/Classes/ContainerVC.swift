@@ -17,13 +17,13 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     
     open var animator = ContainerAnimation() {
         didSet {
-            self.transitioningDelegate = animator as? UIViewControllerTransitioningDelegate
+            transitioningDelegate = animator as? UIViewControllerTransitioningDelegate
         }
     }
     
     private func removePreviousVC() {
-        let index = self.viewControllers.count-2
-        let subVC = self.viewControllers[index]
+        let index = viewControllers.count-2
+        let subVC = viewControllers[index]
         
         subVC.view.removeFromSuperview()
         subVC.removeFromParent()
@@ -31,7 +31,6 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     
     private func customize() {
         self.delegate = self
-        self.isNavigationBarHidden = true
     }
     
     public override init(rootViewController: UIViewController) {
@@ -58,28 +57,35 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
         customize()
     }
     
-    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(_ navigationController: UINavigationController,
+                                     animationControllerFor operation: UINavigationController.Operation,
+                                     from fromVC: UIViewController,
+                                     to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return animator
     }
     
-    public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        self.navigationDelegate?.navigationController!(navigationController,
-                                                       willShow: viewController,
-                                                       animated: animated)
+    public func navigationController(_ navigationController: UINavigationController,
+                                     willShow viewController: UIViewController,
+                                     animated: Bool) {
+        navigationDelegate?.navigationController!(navigationController,
+                                                  willShow: viewController,
+                                                  animated: animated)
     }
     
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        if replacesTopVC && self.viewControllers.count > 1 {
-            self.removePreviousVC()
+    public func navigationController(_ navigationController: UINavigationController,
+                                     didShow viewController: UIViewController,
+                                     animated: Bool) {
+        if replacesTopVC && viewControllers.count > 1 {
+            removePreviousVC()
         }
         
-        self.navigationDelegate?.navigationController!(navigationController,
-                                                       didShow: viewController,
-                                                       animated: animated)
+        navigationDelegate?.navigationController!(navigationController,
+                                                  didShow: viewController,
+                                                  animated: animated)
     }
     
     public func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask {
-        if let navDelegate = self.navigationDelegate {
+        if let navDelegate = navigationDelegate {
             return navDelegate.navigationControllerSupportedInterfaceOrientations!(navigationController)
         }
         
@@ -87,14 +93,15 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     }
     
     public func navigationControllerPreferredInterfaceOrientationForPresentation(_ navigationController: UINavigationController) -> UIInterfaceOrientation {
-        if let navDelegate = self.navigationDelegate {
+        if let navDelegate = navigationDelegate {
             return navDelegate.navigationControllerPreferredInterfaceOrientationForPresentation!(navigationController)
         }
         
         return .portrait
     }
     
-    public func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return self.navigationDelegate?.navigationController!(navigationController, interactionControllerFor: animationController)
+    public func navigationController(_ navigationController: UINavigationController,
+                                     interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return navigationDelegate?.navigationController!(navigationController, interactionControllerFor: animationController)
     }
 }

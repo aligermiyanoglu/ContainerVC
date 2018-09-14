@@ -21,11 +21,14 @@ public final class ViewController: UIViewController {
         }
     }
     
-    @IBAction func didPress(_ sender: Any) {
+    private func nextSegue() -> String {
         flipper = flipper + 1
         
-        let segue = (flipper % 2 != 0) ? "blue" : "red"
-        navController?.performSegue(withIdentifier: segue,
+        return (flipper % 2 != 0) ? "blue" : "red"
+    }
+    
+    @IBAction func didPress(_ sender: Any) {
+        navController?.performSegue(withIdentifier: nextSegue(),
                                     sender: self)
     }
 }
