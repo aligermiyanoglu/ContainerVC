@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0689B1F075C13590AA80AEF487EFFB54 /* Pods-ContainerVC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E626ADCECDC692B0AC323D63FE550567 /* Pods-ContainerVC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1D3D114BAFB6BA39E501D446FCA998 /* ContainerVC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71599ED37D577BAB428CEF306EA0B665 /* ContainerVC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		113FB82F829CEA3144AA5B968C2DA99E /* Pods-ContainerVC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9178F4117E949E38982EFE19CE2D3A0A /* Pods-ContainerVC_Tests-dummy.m */; };
-		26C738CDE57DFAEA87DF43175F9C32BD /* PushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F524D04C1453F8DA74AA5CBDAD826 /* PushAnimation.swift */; };
-		2A5235BC4B6AFD9E1DA37D113A60C165 /* ContainerVC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD6EC798913CB9139F9A1840EDD625B /* ContainerVC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19B964F0ADAA892DF695E857EC794FA7 /* FlashAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3760CE73ADF6AE6C5BAB52CA707C1D71 /* FlashAnimation.swift */; };
+		3884A924A230D4A993A53CB7B44071F5 /* ContainerAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E72E2E06F6188C3F58708C2FF0D897 /* ContainerAnimationProtocol.swift */; };
 		4CBF22B9CD6909F8A30D092E607CC5AB /* Pods-ContainerVC_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7983F0762B374ADAD0226CDB445435D5 /* Pods-ContainerVC_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56059EA313405DEFA73E24A7880CC297 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD506AE444B2FE7D0BBA9FF0F93A752C /* ContainerVC.swift */; };
-		598C9B5015D2A5F2864E157FC7D1173C /* FlashAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D436CA69BD2B6014E7D28DA6BFA3C5D /* FlashAnimation.swift */; };
-		8C232C912B25EE36BB0A8C5BD10A1295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AAC53C47BA580D8DC1C1CFC73EFD2C5E /* ContainerVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B2325A242C7746589E7E54DEAFE654 /* ContainerVC-dummy.m */; };
+		94DBE2A597E38296214650B0A2EEB3E1 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B79F52510946AAEF0DEE412580879 /* ContainerVC.swift */; };
+		9527BFDD098A6FFD0BD8B963F3970C45 /* ContainerVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC049C05E4BC6A91016C9D6477B0FD /* ContainerVC-dummy.m */; };
+		A27432E52C227D9E184D759DD772D97C /* PushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBF284604E294A9694A9CFD1C566119 /* PushAnimation.swift */; };
 		B16ACCD88E60DD93C377101348FF9525 /* Pods-ContainerVC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E768AD8B9D93A7102865658EEA05 /* Pods-ContainerVC_Example-dummy.m */; };
-		B9F2C09F04AE9B1597D88BCDA412E9ED /* ContainerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183EA84840BF20971C713C029DD7F36 /* ContainerAnimation.swift */; };
-		BF0A56141D2D492D2C27680AC6F1D183 /* ContainerAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED1900CEFBAA79175F546062679F0 /* ContainerAnimationProtocol.swift */; };
+		CBA7F119002E21A752B2BCD542315085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		DBB174563A9FF7F02F2FFA8B6FC3A6A9 /* ContainerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBBBF42D8FEEF9811FC410F035A0AE /* ContainerAnimation.swift */; };
 		E29238FBE546BC699B9EEC2E26B2C1B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		FA12C225B3D06177589D8970F76847D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 08443158138AFB04C1D84BF3DD310C62;
+			remoteGlobalIDString = 19E25E08BB1E57477112D968E9229BE9;
 			remoteInfo = ContainerVC;
 		};
 /* End PBXContainerItemProxy section */
@@ -43,30 +43,31 @@
 /* Begin PBXFileReference section */
 		0824DC09F96A70F48196F0D1AA3D6534 /* Pods-ContainerVC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ContainerVC_Example.modulemap"; sourceTree = "<group>"; };
 		0DAB048E79C483390D3D573F2809292F /* Pods-ContainerVC_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContainerVC_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		18EA7133FB524AB54B63B176A3A9CC41 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0DEC049C05E4BC6A91016C9D6477B0FD /* ContainerVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ContainerVC-dummy.m"; sourceTree = "<group>"; };
 		233625F3CF9F9CF89D92597449519B78 /* Pods-ContainerVC_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContainerVC_Tests-resources.sh"; sourceTree = "<group>"; };
-		28482DFC95F99B88D6EEF24A86BC8E6F /* ContainerVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContainerVC.xcconfig; sourceTree = "<group>"; };
+		24A487E1CC2470F8D4D82C9FF05FF144 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2E9B79F52510946AAEF0DEE412580879 /* ContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerVC.swift; path = ContainerVC/Classes/ContainerVC.swift; sourceTree = "<group>"; };
+		34E72E2E06F6188C3F58708C2FF0D897 /* ContainerAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerAnimationProtocol.swift; sourceTree = "<group>"; };
+		3760CE73ADF6AE6C5BAB52CA707C1D71 /* FlashAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlashAnimation.swift; sourceTree = "<group>"; };
 		47FDE6DDDE472B7BA84C8283FD32A1BE /* Pods-ContainerVC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerVC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		530259E7637ABFAD0084716618DED5D1 /* Pods-ContainerVC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerVC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6749CA6417D7A39416F90BBD507C3758 /* Pods_ContainerVC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerVC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		766ED1900CEFBAA79175F546062679F0 /* ContainerAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerAnimationProtocol.swift; sourceTree = "<group>"; };
+		71599ED37D577BAB428CEF306EA0B665 /* ContainerVC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContainerVC-umbrella.h"; sourceTree = "<group>"; };
 		7779E833378701692BF6BA7EA1D7A1AD /* Pods_ContainerVC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerVC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7983F0762B374ADAD0226CDB445435D5 /* Pods-ContainerVC_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ContainerVC_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7AE78DDB04C958B9A4C06935F64FC904 /* Pods-ContainerVC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContainerVC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8BD6EC798913CB9139F9A1840EDD625B /* ContainerVC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContainerVC-umbrella.h"; sourceTree = "<group>"; };
+		7CBF284604E294A9694A9CFD1C566119 /* PushAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PushAnimation.swift; sourceTree = "<group>"; };
+		7CE86C5D48A7E3E9A671ED9D96E47EC0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		86A6930E719BCD76E908CFF60F397907 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDBBBF42D8FEEF9811FC410F035A0AE /* ContainerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerAnimation.swift; sourceTree = "<group>"; };
 		8FD17045C4C9490FFEEE6B154B2B9DC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		904398E53664B275CDC862A25E5D47FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9178F4117E949E38982EFE19CE2D3A0A /* Pods-ContainerVC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContainerVC_Tests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B925AB81701CCBF06E5139084ABDAFF /* Pods-ContainerVC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContainerVC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9C573E6163525326C5BD9A83894245E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D436CA69BD2B6014E7D28DA6BFA3C5D /* FlashAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlashAnimation.swift; sourceTree = "<group>"; };
-		9F4885F7BE15917A83B57C45B1BC4447 /* ContainerVC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ContainerVC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A11B9BFA498DB5B191502482FB23403D /* Pods-ContainerVC_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ContainerVC_Tests.modulemap"; sourceTree = "<group>"; };
+		A1253BB673B1E3241F8DB895F58221AB /* ContainerVC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ContainerVC.podspec; sourceTree = "<group>"; };
 		A1BE86AAA87697C0E59ABF72E66F5F80 /* Pods-ContainerVC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContainerVC_Example-resources.sh"; sourceTree = "<group>"; };
-		A44A142E74A356DE214694406593720A /* ContainerVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContainerVC-prefix.pch"; sourceTree = "<group>"; };
-		AD506AE444B2FE7D0BBA9FF0F93A752C /* ContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerVC.swift; path = ContainerVC/Classes/ContainerVC.swift; sourceTree = "<group>"; };
 		AE086746DBC4CE397901FF48BCA14887 /* Pods-ContainerVC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContainerVC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AED98B23FF164872AA3E4A5089648754 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA773E10DD4A6C1FB44B0933584F469A /* Pods-ContainerVC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerVC_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,12 +75,11 @@
 		CC5C1C268A181455E2092DB488C493B3 /* ContainerVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContainerVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA6E768AD8B9D93A7102865658EEA05 /* Pods-ContainerVC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContainerVC_Example-dummy.m"; sourceTree = "<group>"; };
 		D0B579782AE030A29366B99560D94409 /* Pods-ContainerVC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerVC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D0E3F40FE8B649A7D087AD9F7B48B689 /* ContainerVC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ContainerVC.modulemap; sourceTree = "<group>"; };
-		D183EA84840BF20971C713C029DD7F36 /* ContainerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerAnimation.swift; sourceTree = "<group>"; };
+		D2A215BDD507865628FC858AF0583FFA /* ContainerVC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ContainerVC.modulemap; sourceTree = "<group>"; };
+		D95863F2B51EB704781660E05772F417 /* ContainerVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContainerVC-prefix.pch"; sourceTree = "<group>"; };
+		DA190551FF346297187CE25417775EEE /* ContainerVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContainerVC.xcconfig; sourceTree = "<group>"; };
 		E626ADCECDC692B0AC323D63FE550567 /* Pods-ContainerVC_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ContainerVC_Example-umbrella.h"; sourceTree = "<group>"; };
-		E68F524D04C1453F8DA74AA5CBDAD826 /* PushAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PushAnimation.swift; sourceTree = "<group>"; };
 		E7985C874EEAD28713E453712BA3228A /* Pods-ContainerVC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContainerVC_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F0B2325A242C7746589E7E54DEAFE654 /* ContainerVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ContainerVC-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +91,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		235868FEC34101EA45D84247C02C1F7B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C232C912B25EE36BB0A8C5BD10A1295 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A69792E1EDDD75CC73DD1A8EA4CFAF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,19 +99,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA5C9F78C5E22510DA18C9EC831CA6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA7F119002E21A752B2BCD542315085 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		063580D9767D370DFFB07687098666C2 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9F4885F7BE15917A83B57C45B1BC4447 /* ContainerVC.podspec */,
-				9C573E6163525326C5BD9A83894245E8 /* LICENSE */,
-				18EA7133FB524AB54B63B176A3A9CC41 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		1564E3ADD1A45556D8C0B1F8C3A891C5 /* Pods-ContainerVC_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,13 +128,31 @@
 			path = "Target Support Files/Pods-ContainerVC_Tests";
 			sourceTree = "<group>";
 		};
-		4DB9601EECB0140454A6376A421C9910 /* Protocols */ = {
+		31CCF9FAF9A3F0C2F37E710DF1433BB3 /* ContainerVC */ = {
 			isa = PBXGroup;
 			children = (
-				766ED1900CEFBAA79175F546062679F0 /* ContainerAnimationProtocol.swift */,
+				2E9B79F52510946AAEF0DEE412580879 /* ContainerVC.swift */,
+				DA959427BA4D9DC8860C983B16CA6B6B /* Animations */,
+				E69376A5CF7CFE17CADB185F73CABF16 /* Pod */,
+				CC03C78DC9B59637EF2B90E245B0A8E2 /* Protocols */,
+				51A7848190EA20217A8F4296B0FAE8B7 /* Support Files */,
 			);
-			name = Protocols;
-			path = ContainerVC/Classes/Protocols;
+			name = ContainerVC;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		51A7848190EA20217A8F4296B0FAE8B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2A215BDD507865628FC858AF0583FFA /* ContainerVC.modulemap */,
+				DA190551FF346297187CE25417775EEE /* ContainerVC.xcconfig */,
+				0DEC049C05E4BC6A91016C9D6477B0FD /* ContainerVC-dummy.m */,
+				D95863F2B51EB704781660E05772F417 /* ContainerVC-prefix.pch */,
+				71599ED37D577BAB428CEF306EA0B665 /* ContainerVC-umbrella.h */,
+				86A6930E719BCD76E908CFF60F397907 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ContainerVC";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -153,17 +161,6 @@
 				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		6981F29B083D9C00C8BDB13F9830036B /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				D183EA84840BF20971C713C029DD7F36 /* ContainerAnimation.swift */,
-				9D436CA69BD2B6014E7D28DA6BFA3C5D /* FlashAnimation.swift */,
-				E68F524D04C1453F8DA74AA5CBDAD826 /* PushAnimation.swift */,
-			);
-			name = Animations;
-			path = ContainerVC/Classes/Animations;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -185,19 +182,6 @@
 				6749CA6417D7A39416F90BBD507C3758 /* Pods_ContainerVC_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8AF5CAA656BA0C7BE22F52AA6BAA33F2 /* ContainerVC */ = {
-			isa = PBXGroup;
-			children = (
-				AD506AE444B2FE7D0BBA9FF0F93A752C /* ContainerVC.swift */,
-				6981F29B083D9C00C8BDB13F9830036B /* Animations */,
-				063580D9767D370DFFB07687098666C2 /* Pod */,
-				4DB9601EECB0140454A6376A421C9910 /* Protocols */,
-				EC4A843F23150116B3653CDE31A8A3D4 /* Support Files */,
-			);
-			name = ContainerVC;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -226,12 +210,32 @@
 			path = "Target Support Files/Pods-ContainerVC_Example";
 			sourceTree = "<group>";
 		};
+		CC03C78DC9B59637EF2B90E245B0A8E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				34E72E2E06F6188C3F58708C2FF0D897 /* ContainerAnimationProtocol.swift */,
+			);
+			name = Protocols;
+			path = ContainerVC/Classes/Protocols;
+			sourceTree = "<group>";
+		};
 		D83A67725A84152F8BF890FBE0C82864 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8AF5CAA656BA0C7BE22F52AA6BAA33F2 /* ContainerVC */,
+				31CCF9FAF9A3F0C2F37E710DF1433BB3 /* ContainerVC */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DA959427BA4D9DC8860C983B16CA6B6B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBBBF42D8FEEF9811FC410F035A0AE /* ContainerAnimation.swift */,
+				3760CE73ADF6AE6C5BAB52CA707C1D71 /* FlashAnimation.swift */,
+				7CBF284604E294A9694A9CFD1C566119 /* PushAnimation.swift */,
+			);
+			name = Animations;
+			path = ContainerVC/Classes/Animations;
 			sourceTree = "<group>";
 		};
 		E41D758783ED26977DFB46A43822AEAF /* Targets Support Files */ = {
@@ -243,28 +247,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EC4A843F23150116B3653CDE31A8A3D4 /* Support Files */ = {
+		E69376A5CF7CFE17CADB185F73CABF16 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D0E3F40FE8B649A7D087AD9F7B48B689 /* ContainerVC.modulemap */,
-				28482DFC95F99B88D6EEF24A86BC8E6F /* ContainerVC.xcconfig */,
-				F0B2325A242C7746589E7E54DEAFE654 /* ContainerVC-dummy.m */,
-				A44A142E74A356DE214694406593720A /* ContainerVC-prefix.pch */,
-				8BD6EC798913CB9139F9A1840EDD625B /* ContainerVC-umbrella.h */,
-				904398E53664B275CDC862A25E5D47FE /* Info.plist */,
+				A1253BB673B1E3241F8DB895F58221AB /* ContainerVC.podspec */,
+				24A487E1CC2470F8D4D82C9FF05FF144 /* LICENSE */,
+				7CE86C5D48A7E3E9A671ED9D96E47EC0 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ContainerVC";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2A28DFB5B9A5B0D102CE8347F9104DA6 /* Headers */ = {
+		42D4F6C4F2DC3C66F822B694D2F5824C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5235BC4B6AFD9E1DA37D113A60C165 /* ContainerVC-umbrella.h in Headers */,
+				0D1D3D114BAFB6BA39E501D446FCA998 /* ContainerVC-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +287,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08443158138AFB04C1D84BF3DD310C62 /* ContainerVC */ = {
+		19E25E08BB1E57477112D968E9229BE9 /* ContainerVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0148E5A39731A3433EEDEB46280C400 /* Build configuration list for PBXNativeTarget "ContainerVC" */;
+			buildConfigurationList = DEE3D27AC6CA0A7E386078655AE38F7C /* Build configuration list for PBXNativeTarget "ContainerVC" */;
 			buildPhases = (
-				2A28DFB5B9A5B0D102CE8347F9104DA6 /* Headers */,
-				565825374CC0851AC76E2263DCC97BF9 /* Sources */,
-				235868FEC34101EA45D84247C02C1F7B /* Frameworks */,
-				273E5E8A3534E29905510B52B44956DD /* Resources */,
+				42D4F6C4F2DC3C66F822B694D2F5824C /* Headers */,
+				CD59A26B383AA1BCD768F21525429F87 /* Sources */,
+				EA5C9F78C5E22510DA18C9EC831CA6FA /* Frameworks */,
+				BA06F22B8E967564DA12FA9F87631A45 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -364,7 +364,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08443158138AFB04C1D84BF3DD310C62 /* ContainerVC */,
+				19E25E08BB1E57477112D968E9229BE9 /* ContainerVC */,
 				BA6070CB912F4CDE041E56843F5A2908 /* Pods-ContainerVC_Example */,
 				47B7D013593893F72CE2AFD0962E9E06 /* Pods-ContainerVC_Tests */,
 			);
@@ -372,14 +372,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		273E5E8A3534E29905510B52B44956DD /* Resources */ = {
+		898607BBA0EE6722AADE98C00A50F3B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		898607BBA0EE6722AADE98C00A50F3B9 /* Resources */ = {
+		BA06F22B8E967564DA12FA9F87631A45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,19 +396,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		565825374CC0851AC76E2263DCC97BF9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F2C09F04AE9B1597D88BCDA412E9ED /* ContainerAnimation.swift in Sources */,
-				BF0A56141D2D492D2C27680AC6F1D183 /* ContainerAnimationProtocol.swift in Sources */,
-				AAC53C47BA580D8DC1C1CFC73EFD2C5E /* ContainerVC-dummy.m in Sources */,
-				56059EA313405DEFA73E24A7880CC297 /* ContainerVC.swift in Sources */,
-				598C9B5015D2A5F2864E157FC7D1173C /* FlashAnimation.swift in Sources */,
-				26C738CDE57DFAEA87DF43175F9C32BD /* PushAnimation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6AD59266E0D6A3674CD47B9144943385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,13 +412,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD59A26B383AA1BCD768F21525429F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB174563A9FF7F02F2FFA8B6FC3A6A9 /* ContainerAnimation.swift in Sources */,
+				3884A924A230D4A993A53CB7B44071F5 /* ContainerAnimationProtocol.swift in Sources */,
+				9527BFDD098A6FFD0BD8B963F3970C45 /* ContainerVC-dummy.m in Sources */,
+				94DBE2A597E38296214650B0A2EEB3E1 /* ContainerVC.swift in Sources */,
+				19B964F0ADAA892DF695E857EC794FA7 /* FlashAnimation.swift in Sources */,
+				A27432E52C227D9E184D759DD772D97C /* PushAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		1912DF1AA469D968BA80FC4806451035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ContainerVC;
-			target = 08443158138AFB04C1D84BF3DD310C62 /* ContainerVC */;
+			target = 19E25E08BB1E57477112D968E9229BE9 /* ContainerVC */;
 			targetProxy = EBAEA703E844B43DC9E432F8258AC1AF /* PBXContainerItemProxy */;
 		};
 		B72FB02D65F16EA2A8738D8C98799953 /* PBXTargetDependency */ = {
@@ -443,6 +443,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2CEB3B72834A93223CBF7B12DC939EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA190551FF346297187CE25417775EEE /* ContainerVC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ContainerVC/ContainerVC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ContainerVC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ContainerVC/ContainerVC.modulemap";
+				PRODUCT_MODULE_NAME = ContainerVC;
+				PRODUCT_NAME = ContainerVC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		367E67BA2C95D8159ED4AB90191519D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 530259E7637ABFAD0084716618DED5D1 /* Pods-ContainerVC_Example.release.xcconfig */;
@@ -478,9 +510,9 @@
 			};
 			name = Release;
 		};
-		38E01E49867A8AB9312F2A80653EFAF2 /* Debug */ = {
+		522B44A4D84E35E81166480991ACC5D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28482DFC95F99B88D6EEF24A86BC8E6F /* ContainerVC.xcconfig */;
+			baseConfigurationReference = DA190551FF346297187CE25417775EEE /* ContainerVC.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -502,13 +534,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -566,6 +599,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -732,42 +766,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		F1DD44E0EF6844B85C6C1A765A0023FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28482DFC95F99B88D6EEF24A86BC8E6F /* ContainerVC.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ContainerVC/ContainerVC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ContainerVC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ContainerVC/ContainerVC.modulemap";
-				PRODUCT_MODULE_NAME = ContainerVC;
-				PRODUCT_NAME = ContainerVC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -799,11 +801,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0148E5A39731A3433EEDEB46280C400 /* Build configuration list for PBXNativeTarget "ContainerVC" */ = {
+		DEE3D27AC6CA0A7E386078655AE38F7C /* Build configuration list for PBXNativeTarget "ContainerVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38E01E49867A8AB9312F2A80653EFAF2 /* Debug */,
-				F1DD44E0EF6844B85C6C1A765A0023FA /* Release */,
+				2CEB3B72834A93223CBF7B12DC939EA7 /* Debug */,
+				522B44A4D84E35E81166480991ACC5D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,26 +9,23 @@
 import UIKit
 import ContainerVC
 
-class ViewController: UIViewController {
-    var navController: ContainerVC?
-    var counter = 0
+public final class ViewController: UIViewController {
+    private var navController: ContainerVC?
+    private var flipper = 0
     
-    override func prepare(for segue: UIStoryboardSegue,
+    override public func prepare(for segue: UIStoryboardSegue,
                           sender: Any?) {
-        if segue.identifier == "container" {
-            self.navController = segue.destination as? ContainerVC
-            self.navController?.animator = FlashAnimation()
+        if let container = segue.destination as? ContainerVC {
+            navController = container
+            navController?.animator = FlashAnimation()
         }
     }
     
     @IBAction func didPress(_ sender: Any) {
-        counter = counter + 1
+        flipper = flipper + 1
         
-        if counter % 2 != 0 {
-            self.navController?.performSegue(withIdentifier: "blue", sender: self)
-        } else {
-            self.navController?.performSegue(withIdentifier: "red", sender: self)
-        }
+        let segue = (flipper % 2 != 0) ? "blue" : "red"
+        navController?.performSegue(withIdentifier: segue,
+                                    sender: self)
     }
 }
-

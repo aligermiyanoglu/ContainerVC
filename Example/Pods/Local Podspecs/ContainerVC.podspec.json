@@ -19,7 +19,7 @@
     "ios": "8.0"
   },
   "xcconfig": {
-    "SWIFT_VERSION": "4.0"
+    "SWIFT_VERSION": "4.2"
   },
   "source_files": "ContainerVC/Classes/**/*"
 }
