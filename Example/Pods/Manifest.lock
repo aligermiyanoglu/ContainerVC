@@ -1,5 +1,5 @@
 PODS:
-  - ContainerVC (1.0.1)
+  - ContainerVC (1.0.2)
 
 DEPENDENCIES:
   - ContainerVC (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ContainerVC: 1b12b532140133629a31512c2322cf8b4c960955
+  ContainerVC: 230a03a75380479a4b69592f8541a653e958e48d
 
 PODFILE CHECKSUM: 9763c5edb0091fb6ecd7fc31bbf45d9ee5dc20b6
 

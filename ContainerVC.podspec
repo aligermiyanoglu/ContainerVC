@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ContainerVC'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'ContainerVC is a custom container view controller which subclasses UINavigationController for basic customization.'
 
 # This description is used to generate tags and improve search results.
@@ -26,9 +26,10 @@ Pod::Spec.new do |s|
   s.author           = { 'aligermiyanoglu' => 'anibal23736@hotmail.com' }
   s.source           = { :git => 'https://github.com/aligermiyanoglu/ContainerVC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
+  s.swift_version = '4.2'
   s.ios.deployment_target = '8.0'
-  s.xcconfig = { 'SWIFT_VERSION' => '4.2' }
+#  s.xcconfig = { 'SWIFT_VERSION' => '4.2' }
   s.source_files = 'ContainerVC/Classes/**/*'
   
   # s.resource_bundles = {
