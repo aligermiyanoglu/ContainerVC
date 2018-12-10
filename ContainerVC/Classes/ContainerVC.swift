@@ -13,13 +13,8 @@ public typealias ContainerNavigationDelegate = UINavigationControllerDelegate
 
 open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     @IBInspectable open var replacesTopVC: Bool = false
-    weak open var navigationDelegate: ContainerNavigationDelegate?
     
-    open var animator = ContainerAnimation() {
-        didSet {
-            transitioningDelegate = animator as? UIViewControllerTransitioningDelegate
-        }
-    }
+    weak open var navigationDelegate: ContainerNavigationDelegate?
     
     private func removePreviousVC() {
         let index = viewControllers.count-2
@@ -29,8 +24,13 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
         subVC.removeFromParent()
     }
     
-    private func customize() {
+    open func customize() {
         self.delegate = self
+        self.isNavigationBarHidden = true
+    }
+    
+    open func animator(withOperation operation: UINavigationController.Operation) -> ContainerAnimator {
+        return ContainerAnimation()
     }
     
     public override init(rootViewController: UIViewController) {
@@ -61,7 +61,7 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
                                      animationControllerFor operation: UINavigationController.Operation,
                                      from fromVC: UIViewController,
                                      to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return animator
+        return animator(withOperation: operation)
     }
     
     public func navigationController(_ navigationController: UINavigationController,
@@ -102,6 +102,7 @@ open class ContainerVC: UINavigationController, UINavigationControllerDelegate {
     
     public func navigationController(_ navigationController: UINavigationController,
                                      interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return navigationDelegate?.navigationController!(navigationController, interactionControllerFor: animationController)
+        return navigationDelegate?.navigationController!(navigationController,
+                                                         interactionControllerFor: animationController)
     }
 }

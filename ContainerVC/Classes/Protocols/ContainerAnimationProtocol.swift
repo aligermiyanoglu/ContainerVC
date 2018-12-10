@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol ContainerAnimationProtocol where Self: UIViewControllerAnimatedTransitioning {
+public protocol ContainerAnimationProtocol {
     func duration() -> TimeInterval
     
     func animate(transitionContext: UIViewControllerContextTransitioning)

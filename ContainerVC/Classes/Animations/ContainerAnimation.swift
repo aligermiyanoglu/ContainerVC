@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 
-open class ContainerAnimation: NSObject, UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate, ContainerAnimationProtocol {
+public typealias ContainerAnimator = UIViewControllerAnimatedTransitioning &  UINavigationControllerDelegate & ContainerAnimationProtocol
+
+open class ContainerAnimation: NSObject, ContainerAnimator {
     
     /* ContainerAnimationProtocol Methods */
     /**************************************/
     
-    public func duration() -> TimeInterval {
+    open func duration() -> TimeInterval {
         return TimeInterval(UINavigationController.hideShowBarDuration)
     }
     
-    public func animate(transitionContext: UIViewControllerContextTransitioning) {
+    open func animate(transitionContext: UIViewControllerContextTransitioning) {
         let container = transitionContext.containerView
         
         guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
